@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),porridge)
+ifeq ($(TARGET_DEVICE),m5c)
 ifeq ($(MTKPATH),)
 
 # Proprietary Modules go here
@@ -41,23 +41,23 @@ LOCAL_CERTIFICATE := platform
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libaudiopolicymanager
-LOCAL_MODULE_OWNER := meizu
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MULTILIB := 32
-LOCAL_SRC_FILES_32 := proprietary/lib/libaudiopolicymanager.so
+LOCAL_MODULE = libdpframework
+LOCAL_MODULE_CLASS = SHARED_LIBRARIES
+LOCAL_MODULE_OWNER = mtk
+LOCAL_MODULE_SUFFIX = .so
+LOCAL_PROPRIETARY_MODULE = true
+LOCAL_MULTILIB = 64
+LOCAL_SRC_FILES_64 = proprietary/lib64/libdpframework.so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libaudiopolicymanager
-LOCAL_MODULE_OWNER := meizu
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MULTILIB := 64
-LOCAL_SRC_FILES_64 := proprietary/lib64/libaudiopolicymanager.so
+LOCAL_MODULE = libdpframework
+LOCAL_MODULE_CLASS = SHARED_LIBRARIES
+LOCAL_MODULE_OWNER = mtk
+LOCAL_MODULE_SUFFIX = .so
+LOCAL_PROPRIETARY_MODULE = true
+LOCAL_MULTILIB = 32
+LOCAL_SRC_FILES_32 = proprietary/lib/libdpframework.so
 include $(BUILD_PREBUILT)
 
 endif

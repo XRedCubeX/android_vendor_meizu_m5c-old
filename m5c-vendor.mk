@@ -8,11 +8,9 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/meizu/m5c/proprieta
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/meizu/m5c/proprietary/usr,system/usr)
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/meizu/m5c/proprietary/vendor/bin,system/vendor/bin)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/meizu/m5c/proprietary/xbin,system/xbin)
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/meizu/m5c/proprietary/vendor/etc,system/vendor/etc)
-
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/meizu/m5c/proprietary/vendor/firmware,system/vendor/firmware)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/meizu/m5c/proprietary/app,system/app)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/meizu/m5c/proprietary/vendor/lib,system/vendor/lib)
 
